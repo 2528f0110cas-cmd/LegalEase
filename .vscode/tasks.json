@@ -1,0 +1,8 @@
+{
+  "version": "2.0.0",
+  "tasks": [
+    {"label":"LegalEase: Backend","type":"shell","command":"python -m uvicorn backend.main:app --reload --host 127.0.0.1 --port 8000","problemMatcher":[]},
+    {"label":"LegalEase: Frontend","type":"shell","command":"python -m streamlit run frontend/app.py","problemMatcher":[]},
+    {"label":"LegalEase: Tests","type":"shell","command":"python -m pytest -q","problemMatcher":[]}
+  ]
+}
